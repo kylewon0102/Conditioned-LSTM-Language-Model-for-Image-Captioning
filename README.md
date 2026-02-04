@@ -7,11 +7,22 @@ Automatically generate natural language captions from images.
 
 ## Method
 
-Pipeline:
+Implemented a conditioned LSTM image captioning model:
 
-1. Pretrained CNN extracts visual features
-2. Feature vectors condition an LSTM language model
-3. LSTM generates word sequences autoregressively
+1. Images are encoded using a pretrained ResNet-18 CNN (final classification layer removed),
+   producing 512-dimensional visual embeddings.
+
+2. During decoding, each word embedding (512-d) is concatenated with the image embedding
+   at every timestep, forming a 1024-d input to the LSTM.
+
+3. The LSTM generates captions autoregressively, predicting one token at a time.
+
+This architecture enables the language model to remain visually grounded throughout generation.
+
+## Evaluation
+
+Trained on Flickr8k and evaluated using BLEU scores.
+Beam search was implemented to improve caption quality at inference.
 
 Trained on Flicker dataset.
 
