@@ -26,12 +26,6 @@ Beam search was implemented to improve caption quality at inference.
 
 Trained on Flicker dataset.
 
-## Evaluation
-
-Performance measured using BLEU scores.
-
-Model successfully learned visual-language alignment and produced semantically coherent captions.
-
 ## Architecture
 
 CNN → Feature Projection → LSTM → Softmax Vocabulary Output
