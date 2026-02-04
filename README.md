@@ -13,7 +13,7 @@ Pipeline:
 2. Feature vectors condition an LSTM language model
 3. LSTM generates word sequences autoregressively
 
-Trained on MSCOCO dataset.
+Trained on Flicker dataset.
 
 ## Evaluation
 
