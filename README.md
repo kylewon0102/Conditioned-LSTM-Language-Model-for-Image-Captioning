@@ -30,13 +30,6 @@ Trained on Flicker dataset.
 
 CNN → Feature Projection → LSTM → Softmax Vocabulary Output
 
-## Tech Stack
-
-- PyTorch
-- ResNet
-- LSTM
-- MSCOCO
-
 ## Outcome
 
 End-to-end multimodal deep learning system combining computer vision + NLP.
